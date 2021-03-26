@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Booking</title>
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+    <style>
+            .register .nav-tabs .nav-link:hover{
+                border: none;
+            }
+            .text-align{
+                margin-top: -3%;
+                margin-bottom: -9%;
+
+                padding: 10%;
+                margin-left: 30%;
+            }
+            .form-new{
+                margin-right: 22%;
+                margin-left: 20%;
+                background-color: skyblue;
+            }
+            .register-heading{
+                margin-left: 21%;
+                margin-bottom: 10%;
+                color: #e9ecef;
+               
+            }
+            .register-heading h1{
+                margin-left: 21%;
+                margin-bottom: 10%;
+                color: #e9ecef;
+                
+            }
+            .register{
+                background: -webkit-linear-gradient(left, #055a4f, #00c6ff);
+                margin-top: 3%;
+                padding: 3%;
+                border-radius: 2.5rem;
+            }
+            .btnSubmit
+            {
+                width: 50%;
+                border-radius: 1rem;
+                padding: 1.5%;
+                color: #fff;
+                background-color: #03612e;
+                border: none;
+                cursor: pointer;
+                margin-right: 6%;
+                color: rgb(246, 246, 252);
+                margin-top: 4%;
+            }
+            .form-group .select{
+                width: 100%;
+                background-color: #4CAF50;
+            }
+
+
+    </style>
+
+</head>
+<body>
+   
+<div class="container register">
+
+            <div class="row">
+                <div class="col-md-12">
+                        <div class="tab-pane fade show active text-align form-new" id="home" role="tabpanel" aria-labelledby="home-tab">
+                            <p class="register-heading">
+
+                                <h2> Book Your appointments here</h2><br>
+                                Thanks for choosing to book your appointment with us online.<br> We know your time is valuable so please fill out the form below,<br> and we will confirm your appointment date and time immediately<br> during normal business hours.<br><br>Thanks,Repair Care - CLASSIC SERVICES</p>
+                            <div class="row register-form">
+                                <div class="col-md-12">
+
+                                    <form method="post" autocomplete="off" name="repair">
+
+                                        <div class="form-group"  class="form-control">
+                                            <select name="title">
+                                                <p>Select Title</p><option value="title">Select Title</option>
+                                                <option value="mrs">Mr</option>
+                                                <option value="ms">Mrs</option>
+                                            </select></div>
+
+                                        <div class="form-group">
+                                            <input type="text" name="fullname" class="form-control" placeholder="Full Name *" value="" required=""/>
+                                        </div>
+
+                                        <div class="form-group">
+                                            <input type="text" name="phoneNum" class="form-control" placeholder="Phone Num *" value="" required=""/>
+                                        </div>
+
+                                        <div class="form-group">
+                                            <input type="email" name="email" class="form-control" placeholder=" Email *" value="" required=""/>
+                                        </div>
+
+                                        
+
+                                        <div class="form-group">
+                                            <input type="number" name="pincode" class="form-control" placeholder=" Pin code *" value="" required=""/>
+                                        </div>
+
+                                        <div class="form-group">
+                                            <select name="brands" required="">
+                                                <option value=" ">Select Brands *</option>
+                                                <option value="Bosch">Bosch</option>
+                                                <option value="Siemens">Siemens</option>
+                                                <option value="Faber">Faber</option>
+                                                <option value="Kaff">Kaff</option>
+                                                <option value="Elica">Elica</option>
+                                                <option value="IFB">IFB</option>
+                                                <option value="Gilma">Gilma</option>
+                                                <option value="Glen">Glen</option>
+                                                <option value="Hafele">Hafele</option>
+                                                <option value="Indesit">Indesit</option>
+                                                <option value="Sunflame">Sunflame</option>
+                                                <option value="Cata">Cata</option>
+                                                <option value="Prestige">Prestige</option>
+                                            </select>
+                                        </div>
+
+                                        <div class="form-group">
+                                            <select name="products" required="" >
+                                                <option value=" ">Select Products *</option>
+                                                <option value="Dishwasher">Dishwasher</option>
+                                                <option value="Chimney">Chimney</option>
+                                                <option value="Cooking raneg">Cooking raneg</option>
+                                                <option value="Microwave Oven">Microwave Oven</option>
+                                                <option value="Hob">Hob</option>
+                                            </select>
+                                        </div>
+
+                                        <div class="form-group">
+                                            <select name="services" required="">
+                                                <option value=" ">Select Services *</option>
+                                                <option value="General Services">General Services</option>
+                                                <option value="Deep Cleaning">Deep Cleaning</option>
+                                                <option value="Visiting and inspection">Visiting and inspection</option>
+                                                <option value="Repair and services">Repair and services</option>
+                                                <option value="Installation">Installation</option>
+                                                <option value="Un-Installation">Un-Installation</option>
+                                            </select>
+                                        </div>
+
+
+
+
+                                        <div class="form-group">
+                                            <input type="submit" name="submit" class="btnSubmit btn-block" value="Submit" />
+                                        </div>
+                                    </form>
+                                    <div class="head1">
+                                        <a href="index.html"><input type="button" name="back" class="btnSubmit btn-block" value="Back" /></a>
+                                    </div>
+                                   
+                                </div>
+                            </div>
+                        </div>
+                </div>
+            </div>
+        </div>
+          
+          <script>
+            const scriptURL = 'https://script.google.com/macros/s/AKfycbySm3JhSwDkK0C_cOtpcxL8hH9_oxoxP6wyeazBpJNdhBycahtapRQoEOjS4xVMJ8Yo/exec '
+            const form = document.forms['repair']
+          
+            form.addEventListener('submit', e => {
+              e.preventDefault()
+              fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+                .then(response => alert("Thanks for Contacting us..! We Will Contact You Soon..."))
+                .catch(error => console.error('Error!', error.message))
+            })
+          </script>
+
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+</body>
+</html>
+
+
